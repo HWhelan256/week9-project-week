@@ -82,7 +82,7 @@ function Results() {
       </form>
 
       <Mood average={avgMood} />
-      <Table display={display} />
+      {!!display.length && <Table display={display} />}
     </div>
   );
 }
